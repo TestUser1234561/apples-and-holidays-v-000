@@ -59,8 +59,11 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
   array = []
   holiday_hash.each do |season|
-
+    season.each do |items|
+      array << items
+    end
   end
+  array.flatten
 end
 
 def all_holidays_with_bbq(holiday_hash)
