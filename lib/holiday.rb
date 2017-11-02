@@ -61,7 +61,7 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |key, season|
     puts "#{key}:"
     season.each do |items|
-      str += items.join(", ")
+      puts items.join(", ")
     end
     str += "\n"
   end
