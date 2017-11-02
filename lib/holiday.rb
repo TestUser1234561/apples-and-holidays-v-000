@@ -63,7 +63,7 @@ def all_supplies_in_holidays(holiday_hash)
       array << items
     end
   end
-  array.flatten
+  puts array.flatten
 end
 
 def all_holidays_with_bbq(holiday_hash)
