@@ -63,6 +63,7 @@ def all_supplies_in_holidays(holiday_hash)
     season.each do |items|
       str += items.join(", ")
     end
+    str += "\n"
   end
   puts str
 end
