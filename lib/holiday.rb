@@ -59,13 +59,12 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
   str = ""
   holiday_hash.each do |key, season|
-    str += "#{key}: "
+    puts "#{key}:"
     season.each do |items|
       str += items.join(", ")
     end
     str += "\n"
   end
-  puts str
 end
 
 def all_holidays_with_bbq(holiday_hash)
